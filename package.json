@@ -1,0 +1,32 @@
+{
+    "name": "pepu-name-service",
+    "version": "1.0.0",
+    "description": "Pepu Name Service - Decentralized naming system on Pepu blockchain",
+    "main": "index.js",
+    "scripts": {
+        "compile": "hardhat compile",
+        "deploy": "hardhat run scripts/deploy.js --network pepe-unchained-mainnet",
+        "verify": "hardhat verify --network pepe-unchained-mainnet",
+        "admin": "hardhat run scripts/admin.js --network pepe-unchained-mainnet"
+    },
+    "keywords": [
+        "pepu",
+        "blockchain",
+        "smart-contract",
+        "name-service",
+        "decentralized"
+    ],
+    "author": "Pepu Name Service Team",
+    "license": "MIT",
+    "devDependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+        "@openzeppelin/contracts": "^5.0.0",
+        "hardhat": "^2.19.0",
+        "@nomicfoundation/hardhat-verify": "^2.0.0",
+        "@nomicfoundation/hardhat-ethers": "^3.0.0",
+        "ethers": "^6.0.0"
+    },
+    "dependencies": {
+        "@openzeppelin/contracts": "^5.0.0"
+    }
+}
